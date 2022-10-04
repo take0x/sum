@@ -23,6 +23,11 @@ public class Sample21Controller {
     return "sample21.html";
   }
 
+  @GetMapping("/sample24")
+  public String sample24() {
+    return "sample24.html";
+  }
+
   @GetMapping("/sample21/{param1}/{param2}")
   public String sample21(@PathVariable String param1, @PathVariable String param2, ModelMap model) {
     int tasu = Integer.parseInt(param1);// param1が文字列なので，parseIntでint型の数値に変換する
